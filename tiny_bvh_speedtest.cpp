@@ -29,7 +29,7 @@
 #define TRAVERSE_4WAY
 #define TRAVERSE_8WAY
 #define TRAVERSE_2WAY_DBL
-// #define TRAVERSE_CWBVH
+#define TRAVERSE_CWBVH
 // #define TRAVERSE_2WAY_MT
 // #define TRAVERSE_2WAY_MT_PACKET
 #define TRAVERSE_OPTIMIZED_ST
@@ -88,7 +88,7 @@ using PrecomputedTri = bvh::v2::PrecomputedTri<_Scalar>;
 #elif defined(__APPLE__) && defined(__MACH__)
 // Keep ENABLE_OPENCL for APPLE
 #elif defined ENABLE_OPENCL
-#undef ENABLE_OPENCL
+// #undef ENABLE_OPENCL
 #endif
 #if defined(__GNUC__) && defined(__x86_64__)
 #include <cpuid.h>
